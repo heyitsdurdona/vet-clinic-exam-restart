@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vet clinic</title>
+    <link rel="stylesheet" href="./css/fonts.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/output.css">
 </head>
@@ -65,9 +66,9 @@
     <!-- HEADER END -->
 
     <!-- MAIN START  -->
-    <main class="bg-[#F9F8F8] h-screen" style="background-image: url(./images/main-bg.jpg);">
+    <main class="bg-[#F9F8F8] h-full" style="background-image: url(./images/main-bg.jpg);">
         <!-- HERO START -->
-        <section class="h-full" style="background-image: url(./images/hero-left-bg.jpg), url(./images/hero-right-bg.jpg); background-repeat: no-repeat; background-position: 0px -90px, right bottom;">
+        <section class="h-screen" style="background-image: url(./images/hero-left-bg.jpg), url(./images/hero-right-bg.jpg); background-repeat: no-repeat; background-position: 0px -90px, right bottom;">
             <div class="max-w-screen-xl mx-auto flex justify-end px-4 items-center pt-[140px]">
                 <div class="w-3/5">
                     <h1 class="font-bold text-[70px] leading-[64px] text-[#333333] mb-[29px]">Мы заботимся о <span class="text-[#78C0DE]">ваших питомцах!</span></h1>
@@ -79,19 +80,89 @@
         <!-- HERO END -->
 
         <!-- QUOTE START -->
-        <section class="max-w-4xl mx-auto px-4 py-12 text-center">
-            <blockquote class="text-[20px] italic text-[#949494] py-[43px]">
-            <span class="flex flext-startt font-gagegu text-[200px] text-[#DBDBDB]>"</span>
-              <p >Нашa ветеринарная клиника готова уделить максимум внимания Вам и Вашему питомцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</p>
-            <span class="flex flex-right align-right font-gagegu text-[200px] text-[#DBDBDB]">"</span>
-            </blockquote>
+        <section class="max-w-[1134px] mx-auto  text-center pt-[100px] mb-[190px]">
             
+            <blockquote class="max-w-[740px] mx-auto text-[20px] italic text-[#949494] mb-[35px]"> 
+            <p class="text-left absolute left-[270px]"><img src="./images/quote-left.svg" alt="left quote "></p>           
+              <p class="relative">Нашa ветеринарная клиника готова уделить максимум внимания Вам и Вашему питомцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</p> 
+              <p class="absolute text-right right-[280px]"><img src="./images/quote-right.svg" alt="right quote"></p>            
+            </blockquote>                     
           
-            <p class="bg-hero-left text-xl font-serif font-semibold text-gray-800">Оржоникидзевская Ветеринарная клиника</p>
+            <p class="text-[20px] font-medium text-[#333333]">Оржоникидзевская Ветеринарная клиника</p>
           </section>
           
-        <!-- QUOTE END  -->
+        <!-- QUOTE END -->
+
+        <!-- SERVICES START -->
+          <section>
+            <div class="max-w-screen-xl mx-auto flex flex-col justify-between px-4 items-center">
+                <h2 class="font-bold text-[48px] leading-[54px] text-[#333333] mb-[80px]">Наши услуги</h2>
+                <div class="relative w-full overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carouselContainer">
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider1.svg" alt="Icon 1" class="mx-auto">
+                            <p>Первичный осмотр</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider2.svg" alt="Icon 2" class="mx-auto">
+                            <p>Первичный осмотр</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider3.svg" alt="Icon 3" class="mx-auto">
+                            <p>Хирургическое вмешательство</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider4.svg" alt="Icon 4" class="mx-auto">
+                            <p>Дерматология</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider5.svg" alt="Icon 5" class="mx-auto">
+                            <p>Лабораторная диагностика</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider6.svg" alt="Icon 6" class="mx-auto">
+                            <p>Офтальмология</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider1.svg" alt="Icon 1" class="mx-auto">
+                            <p>Первичный осмотр</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider2.svg" alt="Icon 2" class="mx-auto">
+                            <p>Первичный осмотр</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider3.svg" alt="Icon 3" class="mx-auto">
+                            <p>Хирургическое вмешательство</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider4.svg" alt="Icon 4" class="mx-auto">
+                            <p>Дерматология</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider5.svg" alt="Icon 5" class="mx-auto">
+                            <p>Лабораторная диагностика</p>
+                        </div>
+                        <div class="flex-shrink-0 w-1/6 text-center p-4">
+                            <img src="./images/slider6.svg" alt="Icon 6" class="mx-auto">
+                            <p>Офтальмология</p>
+                        </div>
+                    </div>
+                    <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full">
+                        &#10094;
+                    </button>
+                    <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full">
+                        &#10095;
+                    </button>
+                </div>
+                
+                
+            </div>
+          </section>
+        <!-- SERVICES END -->
     </main>
     <!-- MAIN END -->
+
+    <script src="./main.js"></script>
 </body>
 </html>
