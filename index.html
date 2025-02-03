@@ -66,7 +66,7 @@
     <!-- HEADER END -->
     
     <!-- MAIN START  -->
-    <main class="bg-[#F9F8F8] h-full" style="background-image: url(./images/main-bg.jpg);">
+    <main class="bg-[#F9F8F8] h-full" style="background-image: url(./images/main-bg.jpg); height: 100%;">
         <!-- HERO START -->
         <section class="h-screen" style="background-image: url(./images/hero-left-bg.jpg), url(./images/hero-right-bg.jpg); background-repeat: no-repeat; background-position: 0px -90px, right bottom;">
             <div class="max-w-screen-xl mx-auto flex justify-end px-4 items-center pt-[140px]">
@@ -94,7 +94,7 @@
         <!-- QUOTE END -->
         
         <!-- SERVICES START -->
-        <section>
+        <section class="mb-[127px]">
             <div class="max-w-screen-xl mx-auto flex flex-col justify-between px-4 items-center">
                 <h2 class="font-bold text-[48px] leading-[54px] text-[#333333] mb-[80px]">Наши услуги</h2>
                 <div class="relative w-full overflow-hidden mb-[14px]">
@@ -167,13 +167,26 @@
                         </div>
                         
                     </div>
-                </div>  
-                
-                
-                
+                </div> 
             </div>
         </section>
         <!-- SERVICES END -->
+
+        <!-- SUBSCRIBE START -->
+        <section class="bg-[url('../images/subscribe-bg.jpg')] bg-no-repeat w-full bg-cover h-[481px]">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="flex flex-col pt-[198px] pl-[100px]">
+                    <h2 class="font-bold text-[48px] leading-[20px] text-white mb-[32px] ">Будь в курсе событий</h2>
+                    <div class="flex gap-[21px] mt-[32px]">
+                        <form action="https://echo.htmlacademy.ru">
+                            <input class="pt-[18px] pb-[12px] pl-[22px] pr-[142px] rounded-[5px] placeholder:text-[15px] " type="email" placeholder="Укажите Ваш email адрес">
+                        </form>
+                        <button class="font-medium text-[16px] text-white bg-[#333333] rounded-[3px] py-[15px] px-[48px]" type="button">Подписаться</button>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <!-- SUBSCRIBE END -->
     </main>
     <!-- MAIN END -->
     
